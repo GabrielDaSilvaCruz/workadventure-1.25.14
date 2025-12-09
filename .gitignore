@@ -1,0 +1,83 @@
+# Arquivos e diretórios do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Arquivos de build
+dist/
+build/
+*.tsbuildinfo
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Arquivos de lock (manter apenas um tipo)
+# Descomente a linha abaixo se usar npm
+# package-lock.json
+# Descomente a linha abaixo se usar yarn
+# yarn.lock
+
+# Arquivos de cache
+.cache/
+.parcel-cache/
+
+# Arquivos de backup
+*.bak
+*.backup
+*~
+
+# Uploads e arquivos de usuário (se aplicável)
+uploads/
+user-data/
+
+# Certificados SSL (não commitar em produção)
+*.pem
+*.key
+*.crt
+
+# Dados sensíveis
+secrets/
+credentials/
+
+# Arquivos específicos do WorkAdventure
+maps/**/*.wam.backup
+pusher/debug.log
+back/debug.log
