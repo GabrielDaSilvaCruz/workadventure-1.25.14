@@ -5,15 +5,14 @@ import { CacheOptions } from "axios-cache-interceptor";
 import authenticator from "../../../src/room-api/authentication/AdminAuthenticator";
 import { GuardError } from "../../../src/room-api/types/GuardError";
 
-const roomUrl =
-    "http://play.workadventure.localhost/_/global/maps.workadventure.localhost/tests/Variables/shared_variables.json";
+const roomUrl = "http://play.wocc.com.br/_/global/maps.wocc.com.br/tests/Variables/shared_variables.json";
 const apiKey = "MYAWESOMEKEY";
 
 describe("AdminAuthenticator", () => {
     beforeAll(() => {
         vi.mock("../../../src/pusher/enums/EnvironmentVariable", () => {
             return {
-                ADMIN_API_URL: "https://workadventure.localhost",
+                ADMIN_API_URL: "https://wocc.com.br",
             };
         });
 

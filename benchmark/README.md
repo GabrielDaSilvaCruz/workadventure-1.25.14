@@ -52,7 +52,7 @@ Beware, the report generated is generated for only one instance.
 While testing, you can check:
 
 - CPU load of WorkAdventure API node process (it should not reach 100%)
-- Get metrics at the end of the run: `http://api.workadventure.localhost/metrics`  
+- Get metrics at the end of the run: `http://api.wocc.com.br/metrics`  
   In particular, look for:
   ```
   # HELP nodejs_eventloop_lag_max_seconds The maximum recorded event loop delay.

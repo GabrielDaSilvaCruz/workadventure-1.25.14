@@ -52,9 +52,9 @@ start() {
     print_success "Aplicação iniciada!"
     echo ""
     print_info "Acesse:"
-    echo "  - Frontend: http://play.workadventure.localhost"
-    echo "  - Map Storage: http://map-storage.workadventure.localhost"
-    echo "  - Traefik: http://traefik.workadventure.localhost"
+    echo "  - Frontend: http://play.wocc.com.br"
+    echo "  - Map Storage: http://map-storage.wocc.com.br"
+    echo "  - Traefik: http://traefik.wocc.com.br"
 }
 
 # Parar aplicação

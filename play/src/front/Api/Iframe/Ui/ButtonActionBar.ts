@@ -22,7 +22,7 @@ export class WorkAdventureButtonActionBarCommands extends IframeApiContribution<
 
     /**
      * Add action bar button
-     * {@link http://workadventure.localhost/map-building/api-ui.md#add-action-bar | Website documentation}
+     * {@link http://wocc.com.br/map-building/api-ui.md#add-action-bar | Website documentation}
      */
     addButton(descriptor: ActionBarButtonDescriptor) {
         const addClassicButtonActionBar = isAddActionBarButtonEvent.safeParse(descriptor);
@@ -47,7 +47,7 @@ export class WorkAdventureButtonActionBarCommands extends IframeApiContribution<
 
     /**
      * Remove action bar button
-     * {@link http://workadventure.localhost/map-building/api-ui.md#remove-action-bar | Website documentation}
+     * {@link http://wocc.com.br/map-building/api-ui.md#remove-action-bar | Website documentation}
      */
     removeButton(id: string) {
         this._callbacks.delete(id);

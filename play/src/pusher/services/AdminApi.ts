@@ -252,7 +252,7 @@ class AdminApi implements AdminInterface {
              *        description: "The full URL of WorkAdventure"
              *        required: true
              *        type: "string"
-             *        example: "http://play.workadventure.localhost/@/teamSlug/worldSLug/roomSlug"
+             *        example: "http://play.wocc.com.br/@/teamSlug/worldSLug/roomSlug"
              *      - name: "userId"
              *        in: "query"
              *        description: "The identifier of the current user \n It can be undefined or an uuid or an email"
@@ -389,7 +389,7 @@ class AdminApi implements AdminInterface {
              *        description: "The full URL of WorkAdventure"
              *        required: true
              *        type: "string"
-             *        example: "http://play.workadventure.localhost/@/teamSlug/worldSLug/roomSlug"
+             *        example: "http://play.wocc.com.br/@/teamSlug/worldSLug/roomSlug"
              *      - name: "ipAddress"
              *        in: "query"
              *        description: "IP Address of the user logged in, allows you to check whether a user has been banned or not"
@@ -497,7 +497,7 @@ class AdminApi implements AdminInterface {
          *        description: "The full URL of WorkAdventure"
          *        required: true
          *        type: "string"
-         *        example: "http://play.workadventure.localhost/@/teamSlug/worldSlug/roomSlug"
+         *        example: "http://play.wocc.com.br/@/teamSlug/worldSlug/roomSlug"
          *     responses:
          *       200:
          *         description: The details of the member

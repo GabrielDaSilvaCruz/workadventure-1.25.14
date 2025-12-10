@@ -546,7 +546,7 @@ jobs:
         run: |
           sed -i "s/SECRET_KEY=/SECRET_KEY=someSecret/g" .env
           sed -i "s/VERSION=master/VERSION=${DOCKER_TAG}/g" .env
-          sed -i "s/DOMAIN=workadventure.localhost/DOMAIN=play.workadventure.localhost/g" .env
+          sed -i "s/DOMAIN=wocc.com.br/DOMAIN=play.wocc.com.br/g" .env
           sed -i "s/MAP_STORAGE_AUTHENTICATION_USER=/MAP_STORAGE_AUTHENTICATION_USER=john.doe/g" .env
           sed -i "s/MAP_STORAGE_AUTHENTICATION_PASSWORD=/MAP_STORAGE_AUTHENTICATION_PASSWORD=password/g" .env
           sed -i "s/ADMIN_API_TOKEN=/ADMIN_API_TOKEN=123/g" .env
@@ -778,7 +778,7 @@ jobs:
           NAMESPACE: workadventure-${{ github.event_name == 'pull_request' && env.GITHUB_HEAD_REF_SLUG_URL || env.GITHUB_REF_SLUG_URL }}
 
       - name: "Fix path to assets in WAM test files"
-        run: find "." -type f -name "*.wam" -exec sed -i "s|http://play.workadventure.localhost|${PLAY_URL}|g" {} \;
+        run: find "." -type f -name "*.wam" -exec sed -i "s|http://play.wocc.com.br|${PLAY_URL}|g" {} \;
         working-directory: map-storage/tests
         env:
           PLAY_URL: "https://play-${{ github.event_name == 'pull_request' && env.GITHUB_HEAD_REF_SLUG_URL || env.GITHUB_REF_SLUG_URL }}.test.workadventu.re"
@@ -838,7 +838,7 @@ jobs:
         working-directory: "libs/room-api-clients/room-api-client-js"
 
       - name: "Fix path to assets in WAM test files"
-        run: find "." -type f -name "*.wam" -exec sed -i "s|http://play.workadventure.localhost|${PLAY_URL}|g" {} \;
+        run: find "." -type f -name "*.wam" -exec sed -i "s|http://play.wocc.com.br|${PLAY_URL}|g" {} \;
         working-directory: map-storage/tests
         env:
           PLAY_URL: "https://play-${{ github.event_name == 'pull_request' && env.GITHUB_HEAD_REF_SLUG_URL || env.GITHUB_REF_SLUG_URL }}.test.workadventu.re"

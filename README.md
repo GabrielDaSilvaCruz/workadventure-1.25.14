@@ -38,9 +38,9 @@ docker-compose up -d
 3. **Aguarde os serviços iniciarem** (pode levar alguns minutos na primeira vez)
 
 4. **Acesse a aplicação**
-- Frontend: http://play.workadventure.localhost
-- Map Storage: http://map-storage.workadventure.localhost
-- Traefik Dashboard: http://traefik.workadventure.localhost
+- Frontend: http://play.wocc.com.br
+- Map Storage: http://map-storage.wocc.com.br
+- Traefik Dashboard: http://traefik.wocc.com.br
 
 ### Verificar Status dos Serviços
 
@@ -124,7 +124,7 @@ maps/
 1. Crie uma pasta em `/maps/seu-mapa/`
 2. Adicione o arquivo `.tmj` (Tiled JSON)
 3. O arquivo `.wam` será criado automaticamente ao editar
-4. Acesse: `http://play.workadventure.localhost/_/global/maps.workadventure.localhost/seu-mapa/map.tmj`
+4. Acesse: `http://play.wocc.com.br/_/global/maps.wocc.com.br/seu-mapa/map.tmj`
 
 ## 🔐 Permissões e Autenticação
 

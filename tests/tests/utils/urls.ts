@@ -3,13 +3,13 @@ import { RENDERER_MODE } from "./environment";
 export const play_url =
   process.env.PLAY_URL ??
   (process.env.MAP_STORAGE_PROTOCOL ?? "http") +
-    "://play.workadventure.localhost";
+    "://play.wocc.com.br";
 export const map_storage_url =
   (process.env.MAP_STORAGE_PROTOCOL ?? "http") +
   "://john.doe:password@" +
-  (process.env.MAP_STORAGE_ENDPOINT ?? "map-storage.workadventure.localhost");
+  (process.env.MAP_STORAGE_ENDPOINT ?? "map-storage.wocc.com.br");
 export const maps_domain =
-  process.env.MAPS_DOMAIN ?? "maps.workadventure.localhost";
+  process.env.MAPS_DOMAIN ?? "maps.wocc.com.br";
 export const maps_test_url =
   (process.env.MAP_STORAGE_PROTOCOL ?? "http") +
   "://" +
@@ -30,6 +30,6 @@ export function publicTestMapUrl(
   ).toString();
 }
 
-export const matrix_server_url = process.env.MATRIX_PUBLIC_URI ?? "http://matrix.workadventure.localhost";
+export const matrix_server_url = process.env.MATRIX_PUBLIC_URI ?? "http://matrix.wocc.com.br";
 
-export const matrix_domain = process.env.MATRIX_DOMAIN ?? "matrix.workadventure.localhost";
+export const matrix_domain = process.env.MATRIX_DOMAIN ?? "matrix.wocc.com.br";

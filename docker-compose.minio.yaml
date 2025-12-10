@@ -4,17 +4,17 @@ services:
     networks:
       default:
         aliases:
-          - 'cdn-mapstorage.workadventure.localhost'
+          - 'cdn-mapstorage.wocc.com.br'
 
   minio-mapstorage:
     image: bitnami/minio:2022.9.7
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.minio-mapstorage.rule=Host(`minio-mapstorage.workadventure.localhost`)"
+      - "traefik.http.routers.minio-mapstorage.rule=Host(`minio-mapstorage.wocc.com.br`)"
       - "traefik.http.routers.minio-mapstorage.entryPoints=web"
       - "traefik.http.services.minio-mapstorage.loadbalancer.server.port=9001"
       - "traefik.http.routers.minio-mapstorage.service=minio-mapstorage"
-      - "traefik.http.routers.cdn-mapstorage.rule=Host(`cdn-mapstorage.workadventure.localhost`)"
+      - "traefik.http.routers.cdn-mapstorage.rule=Host(`cdn-mapstorage.wocc.com.br`)"
       - "traefik.http.routers.cdn-mapstorage.entryPoints=web"
       - "traefik.http.services.cdn-mapstorage.loadbalancer.server.port=9000"
       - "traefik.http.routers.cdn-mapstorage.service=cdn-mapstorage"
@@ -33,7 +33,7 @@ services:
       AWS_DEFAULT_REGION: "eu-west-1"
       AWS_BUCKET: "mapstorage"
       AWS_URL: "http://minio-mapstorage:9000"
-      AWS_ENDPOINT: "http://cdn-mapstorage.workadventure.localhost/"
+      AWS_ENDPOINT: "http://cdn-mapstorage.wocc.com.br/"
       USE_DOMAIN_NAME_IN_PATH: "true"
 
 volumes:

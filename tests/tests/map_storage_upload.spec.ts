@@ -136,7 +136,7 @@ test.describe('Map-storage Upload API', () => {
 
     test('not authenticated requests are rejected', async ({ request }) => {
         createZipFromDirectory("./assets/file1/", "./assets/file1.zip");
-        const uploadFile1 = await request.post(new URL("upload", (process.env.MAP_STORAGE_PROTOCOL ?? "http") + "://bad:credentials@" + (process.env.MAP_STORAGE_ENDPOINT ?? 'map-storage.workadventure.localhost')).toString(), {
+        const uploadFile1 = await request.post(new URL("upload", (process.env.MAP_STORAGE_PROTOCOL ?? "http") + "://bad:credentials@" + (process.env.MAP_STORAGE_ENDPOINT ?? 'map-storage.wocc.com.br')).toString(), {
             multipart: {
                 file: fs.createReadStream("./assets/file1.zip"),
             }

@@ -1,0 +1,12 @@
+# Configuração de hosts para o CLIENTE
+
+**Windows**: `C:\Windows\System32\drivers\etc\hosts` (como Administrador)
+**Linux/Mac**: `/etc/hosts` (com sudo)
+
+Adicione apenas esta linha:
+
+```
+172.21.0.117 play.wocc.com.br
+```
+
+Pronto! Todos os outros domínios serão resolvidos internamente pelo servidor.

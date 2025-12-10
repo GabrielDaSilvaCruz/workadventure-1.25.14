@@ -14,7 +14,7 @@ if (!apiKey) {
   throw new Error("No ROOM_API_SECRET_KEY defined on environment variables!");
 }
 
-const client = createRoomApiClient(apiKey, process.env.ROOM_API_HOSTNAME ?? "room-api.workadventure.localhost", process.env.ROOM_API_PORT ? Number(process.env.ROOM_API_PORT) : 80);
+const client = createRoomApiClient(apiKey, process.env.ROOM_API_HOSTNAME ?? "room-api.wocc.com.br", process.env.ROOM_API_PORT ? Number(process.env.ROOM_API_PORT) : 80);
 
 const roomUrl = `${play_url}/_/room-api/${maps_domain}/tests/Variables/shared_variables.json`;
 const variableName = "textField";
@@ -35,7 +35,7 @@ test.describe('Room API', async () => {
             test.skip();
             return;
         }
-        const badClient = createRoomApiClient("BAD KEY", process.env.ROOM_API_HOSTNAME ?? "room-api.workadventure.localhost", process.env.ROOM_API_PORT ? Number(process.env.ROOM_API_PORT) : 80);
+        const badClient = createRoomApiClient("BAD KEY", process.env.ROOM_API_HOSTNAME ?? "room-api.wocc.com.br", process.env.ROOM_API_PORT ? Number(process.env.ROOM_API_PORT) : 80);
         try {
             await badClient.saveVariable({
                  name: variableName,

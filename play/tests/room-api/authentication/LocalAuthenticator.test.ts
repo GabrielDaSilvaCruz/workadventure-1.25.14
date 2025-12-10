@@ -3,15 +3,14 @@ import { describe, test, expect, vi, beforeAll, it } from "vitest";
 import authenticator from "../../../src/room-api/authentication/LocalAuthenticator";
 import { GuardError } from "../../../src/room-api/types/GuardError";
 
-const roomUrl =
-    "http://play.workadventure.localhost/_/global/maps.workadventure.localhost/tests/Variables/shared_variables.json";
+const roomUrl = "http://play.wocc.com.br/_/global/maps.wocc.com.br/tests/Variables/shared_variables.json";
 const apiKey = "MYAWESOMEKEY";
 
 describe("LocalAuthenticator", () => {
     beforeAll(() => {
         vi.mock("../../../src/pusher/enums/EnvironmentVariable", () => {
             return {
-                FRONT_URL: "http://play.workadventure.localhost",
+                FRONT_URL: "http://play.wocc.com.br",
                 ROOM_API_SECRET_KEY: "MYAWESOMEKEY",
             };
         });

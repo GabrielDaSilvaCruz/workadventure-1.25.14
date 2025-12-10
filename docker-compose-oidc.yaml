@@ -6,7 +6,7 @@ services:
       #OPID_CLIENT_SECRET: authorization-code-with-pkce-client-secret
       OPID_CLIENT_ID: authorization-code-client-id
       OPID_CLIENT_SECRET: authorization-code-client-secret
-      OPID_CLIENT_ISSUER: http://oidc.workadventure.localhost
+      OPID_CLIENT_ISSUER: http://oidc.wocc.com.br
       OPID_SCOPE: profile openid email tags-scope
       MAP_EDITOR_ALLOW_ALL_USERS: "false"
 
@@ -126,5 +126,5 @@ services:
       - ./contrib/oidc-server-mock:/tmp/config:ro
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.oidc.rule=Host(`oidc.workadventure.localhost`)"
+      - "traefik.http.routers.oidc.rule=Host(`oidc.wocc.com.br`)"
       - "traefik.http.routers.oidc.entryPoints=web"

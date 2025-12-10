@@ -126,9 +126,9 @@ class MapFetcher {
     async isLocalUrl(url: string): Promise<boolean> {
         if (
             [
-                "http://play.workadventure.localhost/_/global/maps.workadventure.localhost/tests/Variables/shared_variables.json",
-                "http://maps.workadventure.localhost/tests/Properties/mapProperties.json",
-                "http://play.workadventure.localhost/~/maps/areas.wam",
+                "http://play.wocc.com.br/_/global/maps.wocc.com.br/tests/Variables/shared_variables.json",
+                "http://maps.wocc.com.br/tests/Properties/mapProperties.json",
+                "http://play.wocc.com.br/~/maps/areas.wam",
             ].includes(url)
         ) {
             // This is an ugly exception case needed for the E2E test at "tests/tests/variables.spec.ts"

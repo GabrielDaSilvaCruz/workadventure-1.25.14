@@ -2,8 +2,8 @@
 2025-08-26 02:01:14,565 - root - 353 - WARNING - main - Server /usr/local/lib/python3.12/site-packages/synapse/app/homeserver.py version 1.132.0
 2025-08-26 02:01:14,566 - root - 358 - WARNING - main - Copyright (c) 2023 New Vector, Inc
 2025-08-26 02:01:14,566 - root - 359 - WARNING - main - Licensed under the AGPL 3.0 license. Website: https://github.com/element-hq/synapse
-2025-08-26 02:01:14,566 - root - 362 - INFO - main - Server hostname: matrix.workadventure.localhost
-2025-08-26 02:01:14,566 - root - 363 - INFO - main - Public Base URL: http://matrix.workadventure.localhost/
+2025-08-26 02:01:14,566 - root - 362 - INFO - main - Server hostname: matrix.wocc.com.br
+2025-08-26 02:01:14,566 - root - 363 - INFO - main - Public Base URL: http://matrix.wocc.com.br/
 2025-08-26 02:01:14,566 - root - 364 - INFO - main - Instance name: master
 2025-08-26 02:01:14,566 - root - 365 - INFO - main - Twisted reactor: EPollReactor
 2025-08-26 02:01:14,566 - synapse.app.homeserver - 372 - INFO - main - Setting up server
@@ -143,7 +143,7 @@
 2025-08-26 02:01:15,034 - synapse.app.homeserver - 36 - INFO - sentinel - Set file limit to: 1048576
 2025-08-26 02:01:15,036 - synapse.handlers.deactivate_account - 245 - INFO - user_parter_loop-0 - Starting user parter
 2025-08-26 02:01:15,162 - synapse.handlers.deactivate_account - 255 - INFO - user_parter_loop-0 - User parter finished: stopping
-2025-08-26 02:01:15,168 - synapse.http.client - 442 - INFO - sentinel - Received response to GET http://oidc.workadventure.localhost/.well-known/openid-configuration: 200
+2025-08-26 02:01:15,168 - synapse.http.client - 442 - INFO - sentinel - Received response to GET http://oidc.wocc.com.br/.well-known/openid-configuration: 200
 2025-08-26 02:01:15,170 - synapse.util.caches.lrucache - 230 - INFO - sentinel - Expiring LRU caches after 1800 seconds
 2025-08-26 02:01:15,180 - synapse.federation.federation_server - 1408 - INFO - sentinel - Registering federation EDU handler for 'm.receipt'
 2025-08-26 02:01:15,181 - synapse.federation.federation_server - 1408 - INFO - sentinel - Registering federation EDU handler for 'm.direct_to_device'
@@ -189,7 +189,7 @@
 2025-08-26 02:01:22,370 - synapse.storage.background_updates - 578 - INFO - background_updates-0 - Starting update batch on background update 'populate_user_directory_createtables'
 2025-08-26 02:01:22,396 - synapse.storage.background_updates - 621 - INFO - background_updates-0 - Running background update 'populate_user_directory_createtables'. Processed 1 items in 25ms. (total_rate=0.04/ms, current_rate=0.04/ms, total_updated=1, batch_size=100)
 2025-08-26 02:01:22,397 - synapse.storage.background_updates - 546 - INFO - background_updates-0 - Not starting on bg update populate_user_directory_cleanup until populate_user_directory_process_users is done
-2025-08-26 02:01:22,785 - synapse.handlers.register - 449 - INFO - POST-1 - Auto-joining @admin:matrix.workadventure.localhost to #exampleroom:example.com
+2025-08-26 02:01:22,785 - synapse.handlers.register - 449 - INFO - POST-1 - Auto-joining @admin:matrix.wocc.com.br to #exampleroom:example.com
 2025-08-26 02:01:22,785 - synapse.handlers.register - 459 - INFO - POST-1 - Cannot automatically create room with alias #exampleroom:example.com as it isn't local, trying to join the room instead
 2025-08-26 02:01:22,790 - synapse.http.federation.well_known_resolver - 260 - INFO - POST-1 - Fetching https://example.com/.well-known/matrix/server
 2025-08-26 02:01:23,398 - synapse.storage.background_updates - 578 - INFO - background_updates-0 - Starting update batch on background update 'populate_user_directory_process_rooms'
@@ -223,7 +223,7 @@
 2025-08-26 02:01:32,793 - synapse.http.federation.matrix_federation_agent - 371 - INFO - POST-1 - Failed to connect to example.com:8448: HostnameAddress(hostname=b'example.com', port=8448)
 2025-08-26 02:01:32,793 - synapse.http.matrixfederationclient - 810 - INFO - POST-1 - {GET-O-1} [example.com] Request failed: GET matrix-federation://example.com/_matrix/federation/v1/query/directory?room_alias=%23exampleroom%3Aexample.com: ConnectingCancelledError(HostnameAddress(hostname=b'example.com', port=8448))
 2025-08-26 02:01:32,794 - synapse.handlers.register - 509 - ERROR - POST-1 - Failed to join new user to '#exampleroom:example.com': SynapseError('502: Failed to fetch alias')
-2025-08-26 02:01:32,794 - synapse.handlers.register - 449 - INFO - POST-1 - Auto-joining @admin:matrix.workadventure.localhost to #anotherexampleroom:example.com
+2025-08-26 02:01:32,794 - synapse.handlers.register - 449 - INFO - POST-1 - Auto-joining @admin:matrix.wocc.com.br to #anotherexampleroom:example.com
 2025-08-26 02:01:32,794 - synapse.handlers.register - 459 - INFO - POST-1 - Cannot automatically create room with alias #anotherexampleroom:example.com as it isn't local, trying to join the room instead
 2025-08-26 02:01:33,550 - synapse.storage.background_updates - 578 - INFO - background_updates-0 - Starting update batch on background update 'populate_full_user_id_user_filters'
 2025-08-26 02:01:33,558 - synapse.storage.background_updates - 621 - INFO - background_updates-0 - Running background update 'populate_full_user_id_user_filters'. Processed 1 items in 7ms. (total_rate=0.14285714285714285/ms, current_rate=0.14285714285714285/ms, total_updated=1, batch_size=100)
@@ -257,7 +257,7 @@
 2025-08-26 02:01:42,797 - synapse.http.federation.matrix_federation_agent - 371 - INFO - POST-1 - Failed to connect to example.com:8448: HostnameAddress(hostname=b'example.com', port=8448)
 2025-08-26 02:01:42,798 - synapse.http.matrixfederationclient - 810 - INFO - POST-1 - {GET-O-2} [example.com] Request failed: GET matrix-federation://example.com/_matrix/federation/v1/query/directory?room_alias=%23anotherexampleroom%3Aexample.com: ConnectingCancelledError(HostnameAddress(hostname=b'example.com', port=8448))
 2025-08-26 02:01:42,798 - synapse.handlers.register - 509 - ERROR - POST-1 - Failed to join new user to '#anotherexampleroom:example.com': SynapseError('502: Failed to fetch alias')
-2025-08-26 02:01:42,812 - synapse.handlers.auth - 1004 - INFO - POST-1 - Logging in user @admin:matrix.workadventure.localhost on device WNLVYVJHTE
+2025-08-26 02:01:42,812 - synapse.handlers.auth - 1004 - INFO - POST-1 - Logging in user @admin:matrix.wocc.com.br on device WNLVYVJHTE
 2025-08-26 02:01:42,816 - synapse.access.http.8008 - 508 - INFO - POST-1 - ::1 - 8008 - {None} Processed request: 20.465sec/0.000sec (0.423sec, 0.003sec) (0.007sec/0.024sec/17) 180B 200 "POST /_synapse/admin/v1/register HTTP/1.1" "python-requests/2.32.2" [0 dbevts]
 2025-08-26 02:01:43,671 - synapse.storage.background_updates - 578 - INFO - background_updates-0 - Starting update batch on background update 'access_tokens_refresh_token_id_idx'
 2025-08-26 02:01:43,672 - synapse.storage.background_updates - 870 - INFO - background_updates-0 - Adding index access_tokens_refresh_token_id_idx to access_tokens
@@ -329,15 +329,15 @@
 2025-08-26 02:02:45,171 - synapse.util.caches.lrucache - 217 - INFO - LruCache._expire_old_entries-2 - Dropped 0 items from caches
 2025-08-26 02:02:57,413 - synapse.rest.client.login - 340 - INFO - POST-9 - Got login request with identifier: None, medium: None, address: None, user: 'admin'
 2025-08-26 02:02:57,414 - synapse.rest.client.login - 340 - INFO - POST-10 - Got login request with identifier: None, medium: None, address: None, user: 'admin'
-2025-08-26 02:02:57,828 - synapse.handlers.auth - 1004 - INFO - POST-9 - Logging in user @admin:matrix.workadventure.localhost on device LVZAWVLEXK
+2025-08-26 02:02:57,828 - synapse.handlers.auth - 1004 - INFO - POST-9 - Logging in user @admin:matrix.wocc.com.br on device LVZAWVLEXK
 2025-08-26 02:02:57,833 - synapse.access.http.8008 - 508 - INFO - POST-9 - ::ffff:172.22.0.6 - 8008 - {None} Processed request: 0.419sec/0.000sec (0.388sec, 0.001sec) (0.005sec/0.010sec/8) 264B 200 "POST /_matrix/client/r0/login HTTP/1.1" "axios/1.6.6" [0 dbevts]
-2025-08-26 02:02:57,840 - synapse.handlers.auth - 1004 - INFO - POST-10 - Logging in user @admin:matrix.workadventure.localhost on device ILIRYNJQRJ
+2025-08-26 02:02:57,840 - synapse.handlers.auth - 1004 - INFO - POST-10 - Logging in user @admin:matrix.wocc.com.br on device ILIRYNJQRJ
 2025-08-26 02:02:57,847 - synapse.access.http.8008 - 508 - INFO - POST-10 - ::ffff:172.22.0.6 - 8008 - {None} Processed request: 0.431sec/0.001sec (0.401sec, 0.001sec) (0.009sec/0.011sec/8) 264B 200 "POST /_matrix/client/r0/login HTTP/1.1" "axios/1.6.6" [0 dbevts]
-2025-08-26 02:02:57,853 - synapse.http.server - 130 - INFO - GET-12 - <XForwardedForRequest at 0x7f7496ee4a10 method='GET' uri='/_matrix/client/r0/directory/room/%23current-visited-room:matrix.workadventure.localhost' clientproto='HTTP/1.1' site='8008'> SynapseError: 404 - Room alias #current-visited-room:matrix.workadventure.localhost not found
-2025-08-26 02:02:57,854 - synapse.access.http.8008 - 508 - INFO - GET-12 - ::ffff:172.22.0.6 - 8008 - {None} Processed request: 0.002sec/0.001sec (0.001sec, 0.000sec) (0.000sec/0.001sec/1) 109B 404 "GET /_matrix/client/r0/directory/room/%23current-visited-room:matrix.workadventure.localhost HTTP/1.1" "axios/1.6.6" [0 dbevts]
-2025-08-26 02:02:57,858 - synapse.access.http.8008 - 508 - INFO - POST-11 - ::ffff:172.22.0.6 - 8008 - {@admin:matrix.workadventure.localhost} Processed request: 0.014sec/0.000sec (0.003sec, 0.000sec) (0.004sec/0.006sec/7) 41B 200 "POST /_synapse/admin/v1/users/@admin:matrix.workadventure.localhost/override_ratelimit HTTP/1.1" "axios/1.6.6" [0 dbevts]
+2025-08-26 02:02:57,853 - synapse.http.server - 130 - INFO - GET-12 - <XForwardedForRequest at 0x7f7496ee4a10 method='GET' uri='/_matrix/client/r0/directory/room/%23current-visited-room:matrix.wocc.com.br' clientproto='HTTP/1.1' site='8008'> SynapseError: 404 - Room alias #current-visited-room:matrix.wocc.com.br not found
+2025-08-26 02:02:57,854 - synapse.access.http.8008 - 508 - INFO - GET-12 - ::ffff:172.22.0.6 - 8008 - {None} Processed request: 0.002sec/0.001sec (0.001sec, 0.000sec) (0.000sec/0.001sec/1) 109B 404 "GET /_matrix/client/r0/directory/room/%23current-visited-room:matrix.wocc.com.br HTTP/1.1" "axios/1.6.6" [0 dbevts]
+2025-08-26 02:02:57,858 - synapse.access.http.8008 - 508 - INFO - POST-11 - ::ffff:172.22.0.6 - 8008 - {@admin:matrix.wocc.com.br} Processed request: 0.014sec/0.000sec (0.003sec, 0.000sec) (0.004sec/0.006sec/7) 41B 200 "POST /_synapse/admin/v1/users/@admin:matrix.wocc.com.br/override_ratelimit HTTP/1.1" "axios/1.6.6" [0 dbevts]
 2025-08-26 02:02:58,030 - synapse.federation.sender - 607 - INFO - process_event_queue_for_federation-1 - Unexpectedly did not have cached prev group for $DYxnbM4vOVDUF1bwUw9vbh1D1mqAm5MKIm3kFRbK8hc
-2025-08-26 02:02:58,090 - synapse.access.http.8008 - 508 - INFO - POST-13 - ::ffff:172.22.0.6 - 8008 - {@admin:matrix.workadventure.localhost} Processed request: 0.208sec/0.001sec (0.052sec, 0.004sec) (0.017sec/0.030sec/43) 64B 200 "POST /_matrix/client/r0/createRoom HTTP/1.1" "axios/1.6.6" [0 dbevts]
+2025-08-26 02:02:58,090 - synapse.access.http.8008 - 508 - INFO - POST-13 - ::ffff:172.22.0.6 - 8008 - {@admin:matrix.wocc.com.br} Processed request: 0.208sec/0.001sec (0.052sec, 0.004sec) (0.017sec/0.030sec/43) 64B 200 "POST /_matrix/client/r0/createRoom HTTP/1.1" "axios/1.6.6" [0 dbevts]
 2025-08-26 02:02:58,095 - synapse.federation.sender - 607 - INFO - process_event_queue_for_federation-2 - Unexpectedly did not have cached prev group for $gnWwFwV1O18Olwm0_aai3nH3oXOcpLqBhzjXnAEte-c
 2025-08-26 02:02:58,099 - synapse.federation.sender - 607 - INFO - process_event_queue_for_federation-2 - Unexpectedly did not have cached prev group for $3R9XjYQfnYl3e99Mu3hn7BPH0cpNmmJKlltkMyPadFU
 2025-08-26 02:02:58,102 - synapse.federation.sender - 607 - INFO - process_event_queue_for_federation-2 - Unexpectedly did not have cached prev group for $y5mqw7l9-zDli0EIiJwql9L4bBXzfZ2PcQwk_JxiGqE
